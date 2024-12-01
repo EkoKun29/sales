@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\KontrakBaruController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,11 +14,17 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+Auth::routes();
 Route::get('/', function () {
     return view('auth.login');
-});
+})->name('login');
 
-Auth::routes();
+
+Route::get('/log-in', [App\Http\Controllers\Auth\LoginController::class, 'login'])->name('_login');
+Route::post('/log-in-post', [App\Http\Controllers\Auth\LoginController::class, 'posts'])->name('_postlogin');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('_logout');
+
+Route::get('/kontrak-baru',[KontrakBaruController::class, 'index'])->name('_kontrak-baru');

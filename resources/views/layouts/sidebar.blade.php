@@ -7,11 +7,25 @@
     </a>
     <hr class="sidebar-divider my-0">
     <li class="nav-item active">
-      <a class="nav-link" href="index.html">
+      <a class="nav-link" href="{{ route('home') }}">
         <i class="fas fa-fw fa-tachometer-alt"></i>
         <span>Dashboard</span></a>
     </li>
     <hr class="sidebar-divider">
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="{{ route('_kontrak-baru') }}" aria-expanded="true"
+        aria-controls="collapseForm">
+        <i class="fab fa-fw fa-wpforms"></i>
+        <span>MSK Kontrak Baru</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-target="#collapseForm" aria-expanded="true"
+        aria-controls="collapseForm">
+        <i class="fas fa-fw fa-columns"></i>
+        <span>MSK Promosi</span>
+      </a>
+    </li>
     <li class="nav-item">
       <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
         aria-expanded="true" aria-controls="collapseBootstrap">
@@ -23,23 +37,11 @@
           <h6 class="collapse-header">MSK REPEAT</h6>
           <a class="collapse-item" href="alerts.html">Repeat Order</a>
           <a class="collapse-item" href="buttons.html">Repeat Kontrak</a>
+          <a class="collapse-item" href="buttons.html">Repeat Promosi</a>
         </div>
       </div>
     </li>
-    <li class="nav-item">
-      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm" aria-expanded="true"
-        aria-controls="collapseForm">
-        <i class="fab fa-fw fa-wpforms"></i>
-        <span>MSK Kontrak</span>
-      </a>
-      <div id="collapseForm" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-          <h6 class="collapse-header">MSK Kontrak</h6>
-          <a class="collapse-item" href="form_basics.html">Kontrak Baru</a>
-          {{-- <a class="collapse-item" href="form_advanceds.html">Form Advanceds</a> --}}
-        </div>
-      </div>
-    </li>
+    
     {{-- <li class="nav-item">
       <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTable" aria-expanded="true"
         aria-controls="collapseTable">

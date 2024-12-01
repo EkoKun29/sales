@@ -4,6 +4,9 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -17,7 +20,37 @@ class LoginController extends Controller
     | to conveniently provide its functionality to your applications.
     |
     */
+    public function posts(Request $request)
+    {
+        try {
+            $this->validate(
+                $request,
+                [
+                    'email' => 'email|exists:users,email',
+                    'password' => 'required',
 
+                ]
+            );
+
+            $attempts = [
+                'email' => $request->email,
+                'password' => $request->password,
+            ];
+
+            if (Auth::attempt($attempts)) {
+                return redirect()->intended('home');
+            }
+        } catch (\Exception $e) {
+            return redirect('/')->with('error', 'Maaf email atau password yang anda masukkan salah, Silahkan login kembali!');
+        }
+    }
+
+    public function logout()
+    {
+        Session::flush();
+        Auth::logout();
+        return redirect('/');
+    }
     use AuthenticatesUsers;
 
     /**
@@ -35,6 +68,5 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
-        $this->middleware('auth')->only('logout');
     }
 }
