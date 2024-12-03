@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\KontrakBaruController;
+use App\Http\Controllers\RepeatOrderController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -28,3 +29,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('_logout');
 
 Route::get('/kontrak-baru',[KontrakBaruController::class, 'index'])->name('_kontrak-baru');
+
+
+//-----------------------------------Repeat Order------------------------------------------
+Route::get('/repeat-order',[RepeatOrderController::class, 'index'])->name('_repeat-order');
+Route::get('/repeat-order-sync',[RepeatOrderController::class, 'sync'])->name('_repeat-order-sync');
+

@@ -54,4 +54,11 @@ class User extends Authenticatable
 
         Schema::defaultStringLength(191);
     }
+
+    public function repeatOrder() {
+        return $this->hasMany(RepeatOrder::class);
+    }
+    public function kontrakBaru(){
+        return $this->hasMany(KontrakBaru::class);
+    }
 }

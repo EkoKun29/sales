@@ -35,7 +35,7 @@
       <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
           <h6 class="collapse-header">MSK REPEAT</h6>
-          <a class="collapse-item" href="alerts.html">Repeat Order</a>
+          <a class="collapse-item" href="{{ route('_repeat-order') }}">Repeat Order</a>
           <a class="collapse-item" href="buttons.html">Repeat Kontrak</a>
           <a class="collapse-item" href="buttons.html">Repeat Promosi</a>
         </div>
