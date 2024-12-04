@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="../../assets/img/logo/AliansyahLogoo.png" rel="icon">
-    <title>MSK KOOR - Dashboard</title>
+    <title>MSK KOOR</title>
     <link href="../../assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="../../assets/css/ruang-admin.min.css" rel="stylesheet">
@@ -42,6 +42,12 @@
                     </div>
                   </form>
                   <div class="text-center">
+                    <div class="p-6 px-1 pt-0 text-center bg-transparent border-t-0 border-t-solid rounded-b-2xl lg:px-2">
+                      <p class="mx-auto mb-6 leading-normal text-sm">
+                        Belum memiliki akun?
+                        <a href="{{ route('_register') }}" class="relative z-10 font-semibold text-transparent bg-gradient-to-tl from-blue-600 to-cyan-400 bg-clip-text">Daftar Sekarang</a>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

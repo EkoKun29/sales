@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link href="../../assets/img/logo/AliansyahLogoo.png" rel="icon">
-  <title>MSK KOOR - Dashboard</title>
+  <title>MSK KOOR - {{ Auth::user()->name }}</title>
   <link href="../../assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="../../assets/css/ruang-admin.min.css" rel="stylesheet">
@@ -18,7 +18,7 @@
 <body id="page-top">
   <div id="wrapper">
     <!-- Sidebar -->
-    @include('layouts.sidebar')
+    {{-- @include('layouts.sidebar') --}}
     <!-- Sidebar -->
     
     <div id="content-wrapper" class="d-flex flex-column">

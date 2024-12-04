@@ -21,7 +21,7 @@ public function sync(){
 
     try {
         $client = new Client();
-        $url = "https://script.google.com/macros/s/AKfycbzOsi6BO8WvuFp6qoDYLf7-FrAPd_XyBLhWzG01nAfSMpNFgLpc1NmNsfMG9sSKGaAV/exec";
+        $url = "https://script.google.com/macros/s/AKfycbxO99SIZOCKQVpaOAr0reL9oBDYjk0RwFo8KtpmbqxWX6uyqQ6x2lxE4n1qGZ_708ZI/exec";
         $response = $client->request('GET', $url, ['verify' => false]);
         $data = json_decode($response->getBody());
         $order = collect($data);

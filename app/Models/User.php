@@ -58,7 +58,16 @@ class User extends Authenticatable
     public function repeatOrder() {
         return $this->hasMany(RepeatOrder::class);
     }
-    public function kontrakBaru(){
-        return $this->hasMany(KontrakBaru::class);
+    public function agusA(){
+        return $this->hasMany(AgusA::class);
+    }
+    public function zaenal(){
+        return $this->hasMany(Zaenal::class);
+    }
+    public function zaenuddin(){
+        return $this->hasMany(Zaenuddin::class);
+    }
+    public function junaidi(){
+        return $this->hasMany(Junaidi::class);
     }
 }

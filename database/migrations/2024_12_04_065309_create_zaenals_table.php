@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('repeat_order_edis', function (Blueprint $table) {
+        Schema::create('zaenals', function (Blueprint $table) {
             $table->id();
             $table->date('tanggal_penawaran')->nullable();
             $table->date('tanggal_do')->nullable();
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('repeat_order_edis');
+        Schema::dropIfExists('zaenals');
     }
 };

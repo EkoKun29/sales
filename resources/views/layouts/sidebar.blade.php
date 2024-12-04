@@ -6,11 +6,11 @@
       <div class="sidebar-brand-text mx-3">MSK KOOR</div>
     </a>
     <hr class="sidebar-divider my-0">
-    <li class="nav-item active">
+    {{-- <li class="nav-item active">
       <a class="nav-link" href="{{ route('home') }}">
         <i class="fas fa-fw fa-tachometer-alt"></i>
         <span>Dashboard</span></a>
-    </li>
+    </li> --}}
     <hr class="sidebar-divider">
     <li class="nav-item">
       <a class="nav-link collapsed" href="{{ route('_kontrak-baru') }}" aria-expanded="true"
