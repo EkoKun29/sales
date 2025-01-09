@@ -28,8 +28,9 @@
             <thead class="thead-light">
               <tr>
                 <th>No</th>
-                <th>Tanggal Awal Penawaran</th>
-                {{-- <th>Tanggal Ordinal</th> --}}
+                <th>Tgl Awal Penawaran</th>
+                <th>Tgl Penawaran Berjalan</th>
+                <th>Penawaran Ke</th>
                 <th>Tanggal DO</th>
                 <th>Sales</th>
                 <th>Customer</th>
@@ -44,8 +45,9 @@
               @forelse ($DataApi as $o)
               <tr>
                 <td>{{ $loop->iteration }}</td>
-                <td>{{ $o->tgl_penawaran }}</td> <!-- Menggunakan tgl_penawaran -->
-                {{-- <td>{{ $o->tanggal_do }}</td> --}}
+                <td>{{ $o->tanggal_penawaran_awal }}</td> <!-- Menggunakan tgl_penawaran -->
+                <td>{{ $o->tanggal_penawaran_berjalan }}</td>
+                <td>{{ $o->penawaran_ke }}</td>
                 <td>{{ $o->tanggal_do }}</td>
                 <td>{{ $o->nama_sales }}</td>
                 <td>{{ $o->nama_customer }}</td>

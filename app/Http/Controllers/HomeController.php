@@ -50,23 +50,23 @@ public function index()
     $apis = [
         "1" => [
             "model" => RepeatOrder::class,
-            "url" => "https://script.google.com/macros/s/AKfycbxkOqMtfgxaTuH7RYZpP9S1i0N5Rf0JzYcDD8RiDShaDvrwdGOHeSQlju57sitztJqf/exec",
+            "url" => "https://script.google.com/macros/s/AKfycbxfNBze0KBNtH1qV3nKSSFnFbE0fSaijZDgnqExtXIImozhmbuXEHiDNQzDXnDiZ5-C/exec",
         ],
         "2" => [
             "model" => AgusA::class,
-            "url" => "https://script.google.com/macros/s/AKfycbxnW2q3RP2Teh5q00qm21sXCQiDIC_cJODhEM1ScLoFoe7lBtfXs4G11ll0UcZyXPf6GQ/exec",
+            "url" => "https://script.google.com/macros/s/AKfycbzZJWveJa9EDa4nzlthx-eHpvmGDrKWJGasI_adpcM9Fw-XsTuBrEu5C_HjKYu3k0NomQ/exec",
         ],
         "3" => [
             "model" => Zaenal::class,
-            "url" => "https://script.google.com/macros/s/AKfycbwoyNVEJj6DPvdhZ9-GAseKd7eWQqifBC2h668mkyvRQYT8UqJI27z7kFNXPGp3itApnA/exec",
+            "url" => "https://script.google.com/macros/s/AKfycbyvFkthx9MdxLT7buxtt0AB-mkCBT_cHydzZZiwrbOJjEe_3mB8dMl1edjq53yhN6xbog/exec",
         ],
         "4" => [
             "model" => Zaenuddin::class,
-            "url" => "https://script.google.com/macros/s/AKfycbzl8ui1iPvkJurZojReR1aJBwfsdG4GPMsyCbOgtnLkrpmhONFarxVCYFsRDhJaIM0u/exec",
+            "url" => "https://script.google.com/macros/s/AKfycbwE5z6kmewTvT5stkGfaUv9YG9DiyDGBYasEGQlQJDO_hXvJEodd8ruU-_S5NyWdy7E/exec",
         ],
         "5" => [
             "model" => Junaidi::class,
-            "url" => "https://script.google.com/macros/s/AKfycbw66b5X0SuRcStPh2PpZMWObnVyV-zLPvZEgw2h9jMU4CEhTxO7EOWRxbNdAn1_2JCyRw/exec",
+            "url" => "https://script.google.com/macros/s/AKfycbx1AVbHF1hdfozBIuxhQUpGghnLVRCCwxbJ3VZRk_6UyrK4HOio8Mm37kpJK2CcOmDH7g/exec",
         ],
     ];
 
