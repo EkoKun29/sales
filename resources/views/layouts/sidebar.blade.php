@@ -3,7 +3,7 @@
       <div class="sidebar-brand-icon">
         <img src="../../assets/img/logo/AliansyahLogoo.png">
       </div>
-      <div class="sidebar-brand-text mx-3">MSK KOOR</div>
+      <div class="sidebar-brand-text mx-3">DATA SALES</div>
     </a>
     <hr class="sidebar-divider my-0">
     {{-- <li class="nav-item active">

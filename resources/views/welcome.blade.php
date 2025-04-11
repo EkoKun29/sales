@@ -4,7 +4,7 @@
 <div class="container-fluid" id="container-wrapper">
     <!-- Header -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Data MSK Koor {{ Auth::user()->name }}</h1>
+        <h1 class="h3 mb-0 text-gray-800">Koor {{ Auth::user()->name }}</h1>
     </div>
 
     <!-- Row for all three cards -->
@@ -14,7 +14,7 @@
             <div class="card mb-4">
                 <!-- Card Header -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-primary">Data MSK Perhari</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Data Kunjungan Sales</h6>
                 </div>
                 <!-- Table -->
                 <div class="table-responsive p-3">
@@ -67,7 +67,7 @@
             <div class="card mb-4">
                 <!-- Card Header -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-success">Data MSK per Hari 2</h6>
+                    <h6 class="m-0 font-weight-bold text-success">Data Kinerja Sales</h6>
                 </div>
                 <!-- Table -->
                 <div class="table-responsive p-3">
@@ -120,7 +120,7 @@
             <div class="card mb-4">
                 <!-- Card Header -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-danger">Data MSK per Hari 3</h6>
+                    <h6 class="m-0 font-weight-bold text-danger">Data Customer</h6>
                 </div>
                 <!-- Table -->
                 <div class="table-responsive p-3">
