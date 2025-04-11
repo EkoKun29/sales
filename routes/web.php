@@ -30,7 +30,8 @@ Route::post('/log-in-post', [App\Http\Controllers\Auth\LoginController::class, '
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/home/msk-sync',[HomeController::class, 'sync'])->name('_repeat-order-sync');
 
-Route::get('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('_logout');
+Route::post('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
+
 
 
 

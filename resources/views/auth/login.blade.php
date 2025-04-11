@@ -40,6 +40,14 @@
                                         <h1 class="h4 text-gray-900 mb-4"><b>MSK KOOR</b></h1>
                                         <h1 class="h4 text-gray-900 mb-4">Silahkan Login Untuk Masuk !!</h1>
                                     </div>
+                                    @if (session('error'))
+                                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                            {{ session('error') }}
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                    @endif
                                     <form class="user" action="{{ route('_postlogin') }}" method="POST" autocomplete="off" novalidate>
                                         @csrf
                                         <div class="form-group">
