@@ -31,26 +31,26 @@
                                 <th>Produk</th>
                                 <th>Qty</th>
                                 <th>Jenis MSK</th>
-                                <th>Nama Kontrak</th>
-                                <th>Checklist DO</th>
+                                {{-- <th>Nama Kontrak</th>
+                                <th>Checklist DO</th> --}}
                             </tr>
-                        </thead>
-                        <tbody id="card1-body">
-                            @forelse ($DataApi as $o)
-                            <tr>
-                                <td>{{ $loop->iteration }}</td>
-                                <td>{{ $o->tanggal_penawaran_awal }}</td>
-                                <td>{{ $o->tanggal_penawaran_berjalan }}</td>
-                                <td>{{ $o->penawaran_ke }}</td>
-                                <td>{{ $o->tanggal_do }}</td>
-                                <td>{{ $o->nama_sales }}</td>
-                                <td>{{ $o->nama_customer }}</td>
-                                <td>{{ $o->nama_produk }}</td>
-                                <td>{{ $o->total_qty }}</td>
-                                <td>{{ $o->jenis_msk }}</td>
-                                <td>{{ $o->nama_kontrak }}</td>
-                                <td style="text-align:center;">{{ $o->checklist_do }}</td>
-                            </tr>
+                            </thead>
+                            <tbody id="card3-body">
+                              @forelse ($DataApi as $o)
+                              <tr>
+                                  <td>{{ $loop->iteration }}</td>
+                                  <td>{{ $o->tgl_penawaran_awal }}</td>
+                                  <td>{{ $o->tgl_penawaran_berjalan }}</td>
+                                  <td>{{ $o->penawaran_ke }}</td>
+                                  <td>{{ $o->tgl_do }}</td>
+                                  <td>{{ $o->sales }}</td>
+                                  <td>{{ $o->customer }}</td>
+                                  <td>{{ $o->produk }}</td>
+                                  <td>{{ $o->total_qty }}</td>
+                                  <td>{{ $o->jenis_penawaran }}</td>
+                                  {{-- <td>{{ $o->nama_kontrak }}</td>
+                                  <td style="text-align:center;">{{ $o->checklist_do }}</td> --}}
+                              </tr>
                             @empty
                             <tr>
                                 <td colspan="12" class="text-center">Data tidak tersedia.</td>
@@ -73,37 +73,37 @@
                 <div class="table-responsive p-3">
                     <table class="table align-items-center table-flush table-hover" id="dataTableCard2">
                         <thead class="thead-light">
-                          <tr>
-                            <th>No</th>
-                            <th>Tgl Awal Penawaran</th>
-                            <th>Tgl Penawaran Berjalan</th>
-                            <th>Penawaran Ke</th>
-                            <th>Tanggal DO</th>
-                            <th>Sales</th>
-                            <th>Customer</th>
-                            <th>Produk</th>
-                            <th>Qty</th>
-                            <th>Jenis MSK</th>
-                            <th>Nama Kontrak</th>
-                            <th>Checklist DO</th>
-                        </tr>
-                        </thead>
-                        <tbody id="card2-body">
-                          @forelse ($DataApi as $o)
-                          <tr>
-                              <td>{{ $loop->iteration }}</td>
-                              <td>{{ $o->tanggal_penawaran_awal }}</td>
-                              <td>{{ $o->tanggal_penawaran_berjalan }}</td>
-                              <td>{{ $o->penawaran_ke }}</td>
-                              <td>{{ $o->tanggal_do }}</td>
-                              <td>{{ $o->nama_sales }}</td>
-                              <td>{{ $o->nama_customer }}</td>
-                              <td>{{ $o->nama_produk }}</td>
-                              <td>{{ $o->total_qty }}</td>
-                              <td>{{ $o->jenis_msk }}</td>
-                              <td>{{ $o->nama_kontrak }}</td>
-                              <td style="text-align:center;">{{ $o->checklist_do }}</td>
-                          </tr>
+                            <tr>
+                                <th>No</th>
+                                <th>Tgl Awal Penawaran</th>
+                                <th>Tgl Penawaran Berjalan</th>
+                                <th>Penawaran Ke</th>
+                                <th>Tanggal DO</th>
+                                <th>Sales</th>
+                                <th>Customer</th>
+                                <th>Produk</th>
+                                <th>Qty</th>
+                                <th>Jenis MSK</th>
+                                {{-- <th>Nama Kontrak</th>
+                                <th>Checklist DO</th> --}}
+                            </tr>
+                            </thead>
+                            <tbody id="card3-body">
+                              @forelse ($DataApi as $o)
+                              <tr>
+                                  <td>{{ $loop->iteration }}</td>
+                                  <td>{{ $o->tgl_penawaran_awal }}</td>
+                                  <td>{{ $o->tgl_penawaran_berjalan }}</td>
+                                  <td>{{ $o->penawaran_ke }}</td>
+                                  <td>{{ $o->tgl_do }}</td>
+                                  <td>{{ $o->sales }}</td>
+                                  <td>{{ $o->customer }}</td>
+                                  <td>{{ $o->produk }}</td>
+                                  <td>{{ $o->total_qty }}</td>
+                                  <td>{{ $o->jenis_penawaran }}</td>
+                                  {{-- <td>{{ $o->nama_kontrak }}</td>
+                                  <td style="text-align:center;">{{ $o->checklist_do }}</td> --}}
+                              </tr>
                           @empty
                           <tr>
                               <td colspan="12" class="text-center">Data tidak tersedia.</td>
@@ -137,25 +137,25 @@
                             <th>Produk</th>
                             <th>Qty</th>
                             <th>Jenis MSK</th>
-                            <th>Nama Kontrak</th>
-                            <th>Checklist DO</th>
+                            {{-- <th>Nama Kontrak</th>
+                            <th>Checklist DO</th> --}}
                         </tr>
                         </thead>
                         <tbody id="card3-body">
                           @forelse ($DataApi as $o)
                           <tr>
                               <td>{{ $loop->iteration }}</td>
-                              <td>{{ $o->tanggal_penawaran_awal }}</td>
-                              <td>{{ $o->tanggal_penawaran_berjalan }}</td>
+                              <td>{{ $o->tgl_penawaran_awal }}</td>
+                              <td>{{ $o->tgl_penawaran_berjalan }}</td>
                               <td>{{ $o->penawaran_ke }}</td>
-                              <td>{{ $o->tanggal_do }}</td>
-                              <td>{{ $o->nama_sales }}</td>
-                              <td>{{ $o->nama_customer }}</td>
-                              <td>{{ $o->nama_produk }}</td>
+                              <td>{{ $o->tgl_do }}</td>
+                              <td>{{ $o->sales }}</td>
+                              <td>{{ $o->customer }}</td>
+                              <td>{{ $o->produk }}</td>
                               <td>{{ $o->total_qty }}</td>
-                              <td>{{ $o->jenis_msk }}</td>
-                              <td>{{ $o->nama_kontrak }}</td>
-                              <td style="text-align:center;">{{ $o->checklist_do }}</td>
+                              <td>{{ $o->jenis_penawaran }}</td>
+                              {{-- <td>{{ $o->nama_kontrak }}</td>
+                              <td style="text-align:center;">{{ $o->checklist_do }}</td> --}}
                           </tr>
                           @empty
                           <tr>
