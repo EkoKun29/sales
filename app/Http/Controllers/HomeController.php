@@ -50,7 +50,7 @@ public function index()
     $apis = [
         "1" => [
             "model" => RepeatOrder::class,
-            "url" => "https://sales.dodolanobattani.com/1/EDI UST.",
+            "url" => "https://sales.dodolanobattani.com/api/1/EDI UST.",
         ],
         "2" => [
             "model" => AgusA::class,
