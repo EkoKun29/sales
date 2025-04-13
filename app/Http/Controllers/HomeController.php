@@ -50,7 +50,7 @@ public function index()
     $apis = [
         "1" => [
             "model" => RepeatOrder::class,
-            "url" => "https://script.google.com/macros/s/AKfycbxfNBze0KBNtH1qV3nKSSFnFbE0fSaijZDgnqExtXIImozhmbuXEHiDNQzDXnDiZ5-C/exec",
+            "url" => "https://sales.dodolanobattani.com/1/EDI UST.",
         ],
         "2" => [
             "model" => AgusA::class,
